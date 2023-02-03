@@ -7,3 +7,11 @@ export const parameters = {
     },
   },
 }
+
+import { setup } from '@storybook/vue3';
+import { registerPlugins } from '../src/plugins';
+
+setup((app) => {
+  // Registers your app's plugins into Storybook
+  registerPlugins(app);
+});
